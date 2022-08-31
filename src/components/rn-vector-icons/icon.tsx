@@ -14,7 +14,7 @@ import {
   OcticonsIcon,
   SimpleLineIconsIcon,
   ZocialIcon,
-} from './vertor-icons';
+} from '.';
 import {Text, View} from 'react-native';
 
 import React from 'react';
@@ -47,7 +47,7 @@ const Icon = ({
   type,
   name,
   color = 'black',
-  size = 30,
+  size = 24,
   ...props
 }: IconProps) => {
   return (

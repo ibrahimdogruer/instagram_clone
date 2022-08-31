@@ -2,14 +2,14 @@ import * as React from 'react';
 
 import Svg, {Path} from 'react-native-svg';
 
-const SvgSearch = ({size= 30, color = '#000', ...props}) => (
+const SvgSearch = ({size = 29, color = '#000', ...props}) => (
   <Svg
     width={size}
     height={size}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    {...props}
-  >
+    viewBox="0 0 29 29"
+    {...props}>
     <Path
       fillRule="evenodd"
       clipRule="evenodd"

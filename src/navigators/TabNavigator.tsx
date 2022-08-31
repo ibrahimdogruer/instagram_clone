@@ -10,13 +10,12 @@ import {
   SvgShoppingFilled,
 } from '../components/svg-icons';
 
-import Home from '../screens/Home';
-import Icon from '../components/icon';
-import Profile from '../screens/Profile';
+import Home from '../screens/app/Home';
+import Profile from '../screens/app/Profile';
 import React from 'react';
-import Reels from '../screens/Reels';
-import Search from '../screens/Search';
-import Shop from '../screens/Shop';
+import Reels from '../screens/app/Reels';
+import Search from '../screens/app/Search';
+import Shop from '../screens/app/Shop';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 const Tab = createBottomTabNavigator();
@@ -35,8 +34,8 @@ const TabNavigator = () => {
         component={Home}
         options={{
           tabBarIcon: ({focused}) => {
-            if (focused) return <SvgHomeFilled />;
-            return <SvgHome />;
+            if (focused) return <SvgHomeFilled size={30} />;
+            return <SvgHome size={30} />;
           },
         }}
       />
@@ -45,8 +44,8 @@ const TabNavigator = () => {
         component={Search}
         options={{
           tabBarIcon: ({focused}) => {
-            if (focused) return <SvgSearchFilled />;
-            return <SvgSearch />;
+            if (focused) return <SvgSearchFilled size={30} />;
+            return <SvgSearch size={30} />;
           },
         }}
       />
@@ -55,8 +54,8 @@ const TabNavigator = () => {
         component={Reels}
         options={{
           tabBarIcon: ({focused}) => {
-            if (focused) return <SvgReelsFilled />;
-            return <SvgReels />;
+            if (focused) return <SvgReelsFilled size={30} />;
+            return <SvgReels size={30} />;
           },
         }}
       />
@@ -65,8 +64,8 @@ const TabNavigator = () => {
         component={Shop}
         options={{
           tabBarIcon: ({focused}) => {
-            if (focused) return <SvgShoppingFilled />;
-            return <SvgShopping />;
+            if (focused) return <SvgShoppingFilled size={30} />;
+            return <SvgShopping size={30} />;
           },
         }}
       />
@@ -77,7 +76,7 @@ const TabNavigator = () => {
           tabBarIcon: ({focused}) => {
             return (
               <Image
-                className={`w-6 h-6 border rounded-full ${
+                className={`w-[25px] h-[25px] border rounded-full ${
                   focused ? 'border-black' : 'border-transparent'
                 }`}
                 source={{

@@ -2,12 +2,13 @@ import * as React from 'react';
 
 import Svg, {Path, SvgProps} from 'react-native-svg';
 
-const SvgShoppingFilled = ({size= 30, color = '#000', ...props}) => (
+const SvgShoppingFilled = ({size = 29, color = '#000', ...props}) => (
   <Svg
     width={size}
     height={size}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 29 29"
     {...props}>
     <Path
       d="M11.232 8.197V6.45c0-1.736 1.563-3.143 3.492-3.143s3.492 1.407 3.492 3.143v1.746"

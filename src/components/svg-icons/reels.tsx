@@ -2,12 +2,13 @@ import * as React from 'react';
 
 import Svg, {Path, Rect} from 'react-native-svg';
 
-const SvgReels = ({size= 30, color = '#000', ...props}) => (
+const SvgReels = ({size = 29, color = '#000', ...props}) => (
   <Svg
     width={size}
     height={size}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 29 29"
     {...props}>
     <Rect
       x={4.5}

@@ -2,12 +2,13 @@ import * as React from 'react';
 
 import Svg, {Mask, Path, Rect} from 'react-native-svg';
 
-const SvgGrid = ({size= 30, color = '#000', ...props}) => (
+const SvgGrid = ({size = 29, color = '#000', ...props}) => (
   <Svg
     width={size}
     height={size}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 29 29"
     {...props}>
     <Mask id="a" fill="#fff">
       <Rect x={4.5} y={4.408} width={20} height={20} rx={1} />
